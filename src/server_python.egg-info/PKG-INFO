@@ -1,3 +1,11 @@
+Metadata-Version: 2.4
+Name: server-python
+Version: 0.1.0
+Summary: MATLAB server app migration to a Python CLI
+Author: University Project
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
 # Server_Python
 
 This repository now contains three CLI projects:
@@ -63,13 +71,6 @@ IPv6 separators are sanitized (`:` -> `_`) in file names.
 
 ```powershell
 python -m unittest discover -s tests -v
-```
-
-Run the 10MB integration test (client send -> .bin write -> hex conversion):
-
-```powershell
-$env:RUN_LARGE_TEST="1"
-python -m unittest tests.test_large_10mb_pipeline -v
 ```
 
 ## 2) Transform CLI

@@ -1,0 +1,4 @@
+[console_scripts]
+analysis-cli = analysis_cli.cli:main
+server-cli = server_python.cli:main
+transform-cli = transform_cli.cli:main
