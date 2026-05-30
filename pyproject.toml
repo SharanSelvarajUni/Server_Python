@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "server-python"
+version = "0.1.0"
+description = "MATLAB server app migration to a Python CLI"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "University Project" }]
+dependencies = []
+
+[project.scripts]
+server-cli = "server_python.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
